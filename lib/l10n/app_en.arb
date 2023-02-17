@@ -1,16 +1,30 @@
 {
-  "helloWorld": "Hello World!",
+  "helloWorld": "Hello {nameOrWorld} {username}",
   "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
+    "description": "The conventional newborn programmer greeting",
+    "placeholder": {
+      "username": {
+        "type": "string",
+        "format": "",
+        "example": "",
+        "optionalParameters": "{}"
+      }
+    }
   },
   "hello": "Hello {userName}",
   "@hello": {
     "description": "A message with a single parameter",
-    "placeholders": {
+    "placeholder": {
       "userName": {
-        "type": "String",
-        "example": "Bob"
+        "format": "",
+        "example": "",
+        "optionalParameters": "{}"
       }
     }
+  },
+  "cancel": "cancel",
+  "@cancel": {
+    "description": "A string that allows you to cancel an action",
+    "placeholder": {}
   }
 }
