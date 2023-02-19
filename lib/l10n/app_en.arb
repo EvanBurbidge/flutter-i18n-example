@@ -1,15 +1,24 @@
 {
-  "helloWorld": "Hello World!",
-  "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
-  },
   "hello": "Hello {userName}",
   "@hello": {
     "description": "A message with a single parameter",
     "placeholders": {
       "userName": {
-        "type": "String",
-        "example": "Bob"
+        "format": "",
+        "example": "",
+        "optionalParameters": "{}"
+      }
+    }
+  },
+  "hi": "Hi there {username}, how are you today?",
+  "@hi": {
+    "description": "A string to say hi",
+    "placeholders": {
+      "username": {
+        "type": "string",
+        "format": "",
+        "example": "",
+        "optionalParameters": "{}"
       }
     }
   }
